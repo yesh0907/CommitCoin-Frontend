@@ -19,18 +19,38 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Router>
-            <div>      
-              <Route path="/" component={Nav}/>
-              <Route path="/" component={Homepage}/>
-              <Route path="/" component={Mission}/>
-              <Route path="/" component={Activities}/>
-              <Route path="/" component={Contribute}/>
-              <Route path="/" component={Footer}/>
-            </div>     
-        </Router>
-      </div>
+      <Router>
+        <div>
+          <Affix>
+              <Menu
+                  id="navBar"
+                  className = "menu"
+                  onClick={this.handleClick}
+                  selectedKeys={[this.state.current]}
+                  mode="horizontal"
+                  theme = "dark"
+              >
+              <Menu.Item key="/">< Link to = "/">
+                  <Icon type="home" />Home</Link>
+              </Menu.Item>
+              <Menu.Item key="mission"><Link to = "/mission">
+                  <Icon type="info" />Mission</Link>
+              </Menu.Item>
+              <Menu.Item key="activities"> <Link to = "/activities">
+                  <Icon type="line-chart" />Activities</Link>
+              </Menu.Item>
+              <Menu.Item key="contribute"> <Link to = "/contribute">
+                  <Icon type="plus"/>Contribute</Link>
+              </Menu.Item>
+              </Menu>
+          </Affix>      
+                <Route exact path="/" component={Homepage}/>
+                <Route path="/mission" component={Mission}/>
+                <Route path="/activities" component={Activities}/>
+                <Route path="/contribute" component={Contribute}/>
+                <Route path="/" component={Footer}/>    
+        </div>
+      </Router>
     )
   }
 }
