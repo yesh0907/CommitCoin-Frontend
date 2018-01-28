@@ -29,7 +29,7 @@ class App extends React.Component {
                   onClick={this.handleClick}
                   selectedKeys={[this.state.current]}
                   mode="horizontal"
-                  theme = "light"
+                  theme="dark"
               >
               <Menu.Item key="/">< Link to = "/">
                   <Icon type="home" />Home</Link>

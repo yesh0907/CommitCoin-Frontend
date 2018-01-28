@@ -24,7 +24,6 @@ class Nav extends React.Component {
                 onClick={this.handleClick}
                 selectedKeys={[this.state.current]}
                 mode="horizontal"
-                theme = "light"
             >
             <Menu.Item key="home">
                 <Icon type="home" />Home

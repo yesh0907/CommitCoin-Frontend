@@ -66,6 +66,10 @@ body{
   opacity: 0.98;
 }
 
+#navBar > li > a {
+  color: black;
+}
+
 .ant-menu-dark .ant-menu-item {
   color: black;
 }
