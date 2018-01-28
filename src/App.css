@@ -108,6 +108,10 @@ body{
   height: 80vh;
   min-height: 70vh;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contribute h1{
@@ -148,6 +152,7 @@ body{
   min-height: 10vh;
   height:15vh;
   width: 100%;
+  margin-top: 10px;
 }
 
 #footerChild {
