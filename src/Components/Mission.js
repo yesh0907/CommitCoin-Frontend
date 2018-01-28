@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Mission extends React.Component {
     render() {
         return (
-            <div className="mission">
+            <div className="mission fade">
                 <div id="missionChild">
                     <h1>What is CommitCoin?</h1>
                     <p>We all know that human collaboration can lead to better results.

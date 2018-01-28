@@ -3,11 +3,6 @@
 body{
   padding: 0px;
   margin: 0px;
-  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 5s; /* Firefox < 16 */
-   -ms-animation: fadein 5s; /* Internet Explorer */
-    -o-animation: fadein 5s; /* Opera < 12.1 */
-       animation: fadein 5s;
 }
 
 #gradient
@@ -16,6 +11,14 @@ body{
   height: 100vh;
   padding: 0px;
   margin: 0px;
+}
+
+.fade {
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+   -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+       animation: fadein 3s;
 }
 
 
@@ -67,7 +70,7 @@ body{
 }
 
 #navBar > li > a {
-  color: black;
+  color: white;
 }
 
 .ant-menu-dark .ant-menu-item {
@@ -98,7 +101,7 @@ body{
   margin-left:10px;
   margin-right: 15px;
   padding-top:100px;
-  height: 80vh;
+  /* height: 80vh; */
   min-height: 70vh;
 }
 
@@ -152,7 +155,7 @@ body{
   min-height: 10vh;
   height:15vh;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
 #footerChild {

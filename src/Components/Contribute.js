@@ -9,7 +9,7 @@ class Contribute extends React.Component {
     }
     render() {
         return (
-        <div className="contribute">
+        <div className="contribute fade">
             <h1> Contribute </h1>
             <Button target="#" type="primary" size='large'> <Icon type="plus"/>Add Your Repository</Button>
         </div>

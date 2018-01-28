@@ -45,7 +45,7 @@ class Activities extends React.Component {
     }
     render() {
         return (
-            <div className="leaderboard">
+            <div className="leaderboard fade">
                 <h1>Activities</h1>
                 <p id="ldesc">Github Repositories Starred</p>
                 <Row gutter={16} justify="center" align="middle">
