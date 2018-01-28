@@ -20,7 +20,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Router>
+      <Router basename="/build/index.html">
         <div>
           <Affix>
               <Menu
