@@ -62,7 +62,7 @@ var colors = new Array(
   $(document).ready(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-      if (scroll > 350) {
+      if (scroll > 10) {
         $(".menu").css("background", "#1D2F3E");
         console.log($('#navBar'));
       } else {
