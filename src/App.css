@@ -66,6 +66,9 @@ body{
   opacity: 0.98;
 }
 
+.ant-menu-dark .ant-menu-item {
+  color: black;
+}
 
 #extension {
   position: absolute;
@@ -91,7 +94,8 @@ body{
   margin-left:10px;
   margin-right: 15px;
   padding-top:100px;
-
+  height: 80vh;
+  min-height: 70vh;
 }
 
 /*Contribute*/
