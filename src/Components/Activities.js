@@ -22,6 +22,26 @@ class Activities extends React.Component {
     }
     componentDidMount() {
       if (!chrome) return; // eslint-disable-line
+      if (localStorage.getItem("CC-Blockchain")) {
+        let bc = JSON.parse(localStorage.getItem('CC-Blockchain'));
+        console.log(bc);
+        console.log(bc.reduce((arr, e) => (
+          e.data.action === actions.ADD_STAR ? [{
+            author: e.data.repo.split('/')[0],
+            repository: e.data.repo.split('/')[1],
+            starred: e.data.user
+          }, ...arr] : arr
+        ), []));
+        this.setState({
+          dataSource: bc.reduce((arr, e) => (
+              e.data.action === actions.ADD_STAR ? [{
+                author: e.data.repo.split('/')[0],
+                repository: e.data.repo.split('/')[1],
+                starred: e.data.user
+              }, ...arr] : arr
+          ), [])
+        });
+      }
       chrome.runtime.sendMessage({ action: actions.GET_CHAIN }, data => { // eslint-disable-line
         let bc = data.blockchain;
         console.log(bc);
