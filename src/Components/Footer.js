@@ -5,9 +5,9 @@ class Footer extends React.Component {
         return (
             <div className="footer">
                 <div id="footerChild">
-                    <a href="mailto:gatiganti44914@sas.edu.sg?Subject=Commit%20Coin"
+                    <a href="mailto:chandirama46370@sas.edu.sg?Subject=Commit%20Coin"
                     ><Icon type="mail"/> Contact Us</a>
-                    {/* <p>Developed by Yesh Chandiramani, Alan Chang, Sohit Gatiganti & Sarthak Navjivan</p> */}
+                    <p>Developed by Yesh Chandiramani</p>
                 </div>    
             </div>
         )
